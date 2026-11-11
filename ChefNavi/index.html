@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie</title>
+    <link rel="shortcut icon" href="icon/Icon.png" type="image/x-icon" />
+    <style>
+      header {
+        background-color: aquamarine;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px;
+      }
+      header nav {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+      }
+      header li {
+        list-style: none;
+      }
+      header a {
+        text-decoration: none;
+      }
+      header h2{
+       margin-right: auto;
+       margin-left: 20px;
+      }
+      header img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      #home {
+        width: 98vw;
+        height: 100vh;
+      }
+      .title {
+        background-color: brown;
+        border-radius: 20px;
+        border: 2px solid brown;
+        text-align: center;
+        margin: 20px;
+      }
+      #recipes {
+        width: 94vw;
+        height: 85vh;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        gap: 20px;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 20px;
+        background-image: url("bg\ for\ food.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #recipes #recipe {
+        width: 25vw;
+        height: 60vh;
+        box-shadow: 2px 2px 2px whitesmoke;
+        border: 2px solid whitesmoke;
+        background-color: #fffdfd;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      #recipes #recipe h2 {
+        border-left: 2px solid red;
+        padding-left: 10px;
+      }
+      #recipes #recipe img {
+        width: 200px;
+        height: 150px;
+        border-radius: 20px;
+      }
+      details li {
+        padding-left: 20px;
+        list-style: none;
+      }
+      #contact {
+        width: 95vw;
+        height: 100vh;
+        padding: 20px;
+        position: relative;
+      }
+      #contact h2 {
+        background-color: brown;
+        border-radius: 20px;
+        border: 2px solid brown;
+        text-align: center;
+        margin: 20px;
+        padding: 15px;
+      }
+      #map {
+        padding: 3em;
+      }
+      #feedback {
+        position: absolute;
+        top: 15%;
+        right: 20px;
+        width: 20vw;
+        height: 50vh;
+        padding: 3em 8em 7em 2em;
+        margin: 40px;
+        box-shadow: 2px 2px 2px black;
+        border: 2px solid whitesmoke;
+        border-radius: 20px;
+        background-image: url("icon/background.jpg");
+        background-size: cover;
+      }
+      #feedback label {
+        font-size: larger;
+      }
+      #feedback input {
+        width: 300px;
+        height: 30px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      #feedback textarea {
+        width: 300px;
+        height: 150px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      #feedback button {
+        width: 100px;
+        height: 30px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background-color: green;
+        color: whitesmoke;
+        cursor: pointer;
+      }
+      footer {
+        background-color: aquamarine;
+        border-radius: 20px;
+      }
+      footer section {
+        background-color: aquamarine;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      footer h2 {
+        margin: 20px;
+        padding-top: 20px;
+      }
+      footer nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 20px;
+      }
+      footer li {
+        list-style: none;
+        padding: 5px;
+      }
+      footer a {
+        text-decoration: none;
+      }
+      footer p {
+        text-align: center;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="icon/Icon.png" alt="Logo">
+      <h2>ChefNavi</h2>
+      <nav>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#veg">Veg</a></li>
+        <li><a href="#non-veg">Non-Veg</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </nav>
+    </header>
+    <section id="home">
+      <div class="title">
+        <h2>Food Recepies</h2>
+      </div>
+      <div id="recipes">
+        <section id="recipe">
+          <img src="icon/idly.jpg" alt="Idly" srcset="" />
+          <h2>Idly</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Idli Rice: 4 cups</li>
+            <li>Urad Dal (Whole): 1 cup</li>
+            <li>Fenugreek Seeds (Methi): 1 tsp</li>
+            <li>Poha (Flattened rice): ½ cup (optional, for softness)</li>
+            <li>Rock Salt: 1.5 tbsp</li>
+          </details>
+        </section>
+        <section id="recipe">
+          <img src="icon/Dosa.jpg" alt="Dosa" srcset="" />
+          <h2>Dosa</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Idli Rice: 4 cups</li>
+            <li>Urad Dal (Whole): 1 cup</li>
+            <li>Fenugreek Seeds (Methi): 1 tsp</li>
+            <li>Poha (Flattened rice): ½ cup (optional, for softness)</li>
+            <li>Rock Salt: 1.5 tbsp</li>
+          </details>
+        </section>
+        <section id="recipe">
+          <img src="icon/rava.jpg" alt="rava" srcset="" />
+          <h2>Rava</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Rava (Sooji/Semolina): 2.5 cups</li>
+            <li>Milk: 1/2 cup (for Kesari)</li>
+            <li>Rock Salt: 1.5 tbsp</li>
+          </details>
+        </section>
+        <section id="recipe">
+          <img src="icon/veg Biriyani.jpg" alt="Veg Biriyani" srcset="" />
+          <h2>Veg Biriyani</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Basmati Rice: 1 cup</li>
+            <li>Mixed Vegetables: 1.5 cups total</li>
+            <li>Onions: 2 medium</li>
+            <li>Tomatoes: 1 large</li>
+            <li>Ghee & Cooking Oil: 2 tbsp each</li>
+            <li>Water: 1.5 cups</li>
+          </details>
+        </section>
+        <section id="recipe">
+          <img src="icon/puri.jpg" alt="puri" srcset="" />
+          <h2>Puri</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Whole Wheat Flour (Atta): 1 cup</li>
+            <li>Fine Rava (Sooji / Semolina): 1 tbsp</li>
+            <li>Salt: ¼ tsp</li>
+            <li>Sugar: ½ tsp</li>
+            <li>Oil or Melted Ghee: 1 tsp</li>
+            <li>Water: Approx. ⅓ to ½ cup</li>
+          </details>
+        </section>
+        <section id="recipe">
+          <img src="icon/Curd rice.jpg" alt="Curd Rice" srcset="" />
+          <h2>Curd Rice</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Raw Rice: ½ cup</li>
+            <li>Water: 1½ to 2 cups</li>
+            <li>Plain Curd (Yogurt): 1 to 1½ cups</li>
+            <li>Milk: ¼ to ½ cup</li>
+            <li>Salt:need taste</li>
+          </details>
+        </section>
+
+        <section id="recipe">
+          <img
+            src="icon/chicken biriyani.jpg"
+            alt="Chicken Biriyani"
+            srcset=""
+          />
+          <h2>Chicken Biriyani</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Chicken: 500 g</li>
+            <li>Plain Yogurt (Curd): 3 to 4 tablespoons</li>
+            <li>Ginger-Garlic Paste: 1½ tablespoons</li>
+            <li>Lemon Juice: 1 tablespoo</li>
+            <li>Salt:need taste</li>
+          </details>
+        </section>
+
+        <section id="recipe">
+          <img src="icon/chicken fried rice.jpg" alt="Chicken Rice" srcset="" />
+          <h2>Chicken Rice</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Chicken: 500 g</li>
+            <li>
+              Cornflour (Cornstarch) or Tapioca Flour: 1½ to 2 tablespoons
+            </li>
+            <li>Ginger-Garlic Paste: 1½ tablespoons</li>
+            <li>Black Pepper Powder: ½ teaspoon</li>
+            <li>Salt:need taste</li>
+          </details>
+        </section>
+
+        <section id="recipe">
+          <img src="icon/Mutton BIRIYANI.jpg" alt="Mutton Biriyani" srcset="" />
+          <h2>Mutton Biriyani</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Mutton: 500 g bone-in pieces</li>
+            <li>Lemon Juice: 1 tablespoon</li>
+            <li>Ginger-Garlic Paste: 1½ tablespoons</li>
+            <li>Black Pepper Powder: ½ teaspoon</li>
+            <li>Salt:need taste</li>
+          </details>
+        </section>
+
+        <section id="recipe">
+          <img src="icon/Fish Fry.jpg" alt="Fish Fry" srcset="" />
+          <h2>Fish Fry</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Fish: 500 g</li>
+            <li>Kashmiri Chilli Powder: 1½ to 2 tablespoons</li>
+            <li>Ginger-Garlic Paste: 1½ tablespoons</li>
+            <li>Black Pepper Powder: ½ teaspoon</li>
+            <li>Salt:need taste</li>
+          </details>
+        </section>
+
+        <section id="recipe">
+          <img src="icon/Prawn Fry.jpg" alt="Prawn Fry" srcset="" />
+          <h2>Prawn Fry</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Prawns: 500 g</li>
+            <li>Kashmiri Chilli Powder: 1½ to 2 tablespoons</li>
+            <li>Ginger-Garlic Paste: 1½ tablespoons</li>
+            <li>Black Pepper Powder: ½ teaspoon</li>
+            <li>Salt:need taste</li>
+          </details>
+        </section>
+
+        <section id="recipe">
+          <img src="icon/Egg Fry.jpg" alt="Egg Fry" srcset="" />
+          <h2>Egg Fry</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Eggs: 4 to 6 hard-boiled eggs</li>
+            <li>Kashmiri Chilli Powder: 1½ to 2 tablespoons</li>
+            <li>Ginger-Garlic Paste: 1½ tablespoons</li>
+            <li>Black Pepper Powder: ½ teaspoon</li>
+            <li>Salt:need taste</li>
+          </details>
+        </section>
+      </div>
+    </section>
+    <br /><br />
+    <section id="veg">
+      <div class="title">
+        <h2>Veg Recepies</h2>
+      </div>
+      <div id="recipes">
+        <section id="recipe">
+          <img src="icon/idly.jpg" alt="Idly" srcset="" />
+          <h2>Idly</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Idli Rice: 4 cups</li>
+            <li>Urad Dal (Whole): 1 cup</li>
+            <li>Fenugreek Seeds (Methi): 1 tsp</li>
+            <li>Poha (Flattened rice): ½ cup (optional, for softness)</li>
+            <li>Rock Salt: 1.5 tbsp</li>
+          </details>
+        </section>
+        <section id="recipe">
+          <img src="icon/Dosa.jpg" alt="Dosa" srcset="" />
+          <h2>Dosa</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Idli Rice: 4 cups</li>
+            <li>Urad Dal (Whole): 1 cup</li>
+            <li>Fenugreek Seeds (Methi): 1 tsp</li>
+            <li>Poha (Flattened rice): ½ cup (optional, for softness)</li>
+            <li>Rock Salt: 1.5 tbsp</li>
+          </details>
+        </section>
+        <section id="recipe">
+          <img src="icon/rava.jpg" alt="rava" srcset="" />
+          <h2>Rava</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Rava (Sooji/Semolina): 2.5 cups</li>
+            <li>Milk: 1/2 cup (for Kesari)</li>
+            <li>Rock Salt: 1.5 tbsp</li>
+          </details>
+        </section>
+        <section id="recipe">
+          <img src="icon/veg Biriyani.jpg" alt="Veg Biriyani" srcset="" />
+          <h2>Veg Biriyani</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Basmati Rice: 1 cup</li>
+            <li>Mixed Vegetables: 1.5 cups total</li>
+            <li>Onions: 2 medium</li>
+            <li>Tomatoes: 1 large</li>
+            <li>Ghee & Cooking Oil: 2 tbsp each</li>
+            <li>Water: 1.5 cups</li>
+          </details>
+        </section>
+        <section id="recipe">
+          <img src="icon/puri.jpg" alt="puri" srcset="" />
+          <h2>Puri</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Whole Wheat Flour (Atta): 1 cup</li>
+            <li>Fine Rava (Sooji / Semolina): 1 tbsp</li>
+            <li>Salt: ¼ tsp</li>
+            <li>Sugar: ½ tsp</li>
+            <li>Oil or Melted Ghee: 1 tsp</li>
+            <li>Water: Approx. ⅓ to ½ cup</li>
+          </details>
+        </section>
+        <section id="recipe">
+          <img src="icon/Curd rice.jpg" alt="Curd Rice" srcset="" />
+          <h2>Curd Rice</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Raw Rice: ½ cup</li>
+            <li>Water: 1½ to 2 cups</li>
+            <li>Plain Curd (Yogurt): 1 to 1½ cups</li>
+            <li>Milk: ¼ to ½ cup</li>
+            <li>Salt:need taste</li>
+          </details>
+        </section>
+      </div>
+    </section>
+    <section id="non-veg">
+      <div class="title">
+        <h2>Non-Veg Recepies</h2>
+      </div>
+      <div id="recipes">
+        <section id="recipe">
+          <img
+            src="icon/chicken biriyani.jpg"
+            alt="Chicken Biriyani"
+            srcset=""
+          />
+          <h2>Chicken Biriyani</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Chicken: 500 g</li>
+            <li>Plain Yogurt (Curd): 3 to 4 tablespoons</li>
+            <li>Ginger-Garlic Paste: 1½ tablespoons</li>
+            <li>Lemon Juice: 1 tablespoons</li>
+            <li>Salt:need taste</li>
+          </details>
+        </section>
+
+        <section id="recipe">
+          <img src="icon/chicken fried rice.jpg" alt="Chicken Rice" srcset="" />
+          <h2>Chicken Rice</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Chicken: 500 g</li>
+            <li>
+              Cornflour (Cornstarch) or Tapioca Flour: 1½ to 2 tablespoons
+            </li>
+            <li>Ginger-Garlic Paste: 1½ tablespoons</li>
+            <li>Black Pepper Powder: ½ teaspoon</li>
+            <li>Salt:need taste</li>
+          </details>
+        </section>
+
+        <section id="recipe">
+          <img src="icon/Mutton BIRIYANI.jpg" alt="Mutton Biriyani" srcset="" />
+          <h2>Mutton Biriyani</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Mutton: 500 g bone-in pieces</li>
+            <li>Lemon Juice: 1 tablespoon</li>
+            <li>Ginger-Garlic Paste: 1½ tablespoons</li>
+            <li>Black Pepper Powder: ½ teaspoon</li>
+            <li>Salt:need taste</li>
+          </details>
+        </section>
+
+        <section id="recipe">
+          <img src="icon/Fish Fry.jpg" alt="Fish Fry" srcset="" />
+          <h2>Fish Fry</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Fish: 500 g</li>
+            <li>Kashmiri Chilli Powder: 1½ to 2 tablespoons</li>
+            <li>Ginger-Garlic Paste: 1½ tablespoons</li>
+            <li>Black Pepper Powder: ½ teaspoon</li>
+            <li>Salt:need taste</li>
+          </details>
+        </section>
+
+        <section id="recipe">
+          <img src="icon/Prawn Fry.jpg" alt="Prawn Fry" srcset="" />
+          <h2>Prawn Fry</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Prawns: 500 g</li>
+            <li>Kashmiri Chilli Powder: 1½ to 2 tablespoons</li>
+            <li>Ginger-Garlic Paste: 1½ tablespoons</li>
+            <li>Black Pepper Powder: ½ teaspoon</li>
+            <li>Salt:need taste</li>
+          </details>
+        </section>
+
+        <section id="recipe">
+          <img src="icon/Egg Fry.jpg" alt="Egg Fry" srcset="" />
+          <h2>Egg Fry</h2>
+          <details>
+            <summary>Ingredients</summary>
+            <br />
+            <li>Eggs: 4 to 6 hard-boiled eggs</li>
+            <li>Kashmiri Chilli Powder: 1½ to 2 tablespoons</li>
+            <li>Ginger-Garlic Paste: 1½ tablespoons</li>
+            <li>Black Pepper Powder: ½ teaspoon</li>
+            <li>Salt:need taste</li>
+          </details>
+        </section>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.2304690184287!2d76.93587487355663!3d11.096193653217183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f70023db8d47%3A0x4c9cdf5b8edeb96a!2sSALEM%20RR%20BIRIYANI%20THUDIYALUR!5e0!3m2!1sen!2sin!4v1794201947675!5m2!1sen!2sin"
+          width="500"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+      <div id="feedback">
+        <form action="">
+          <label for="">Name:</label>
+          <input type="text" />
+          <br />
+          <label for="">Email:</label>
+          <input type="email" />
+          <br />
+          <label for="">Feedback:</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <br />
+          <button>Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <section>
+        <div>
+          <h2>Quick Links</h2>
+          <nav>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#veg">Veg</a></li>
+            <li><a href="#non-veg">Non-Veg</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </nav>
+        </div>
+        <div>
+          <h2>External Links</h2>
+          <nav>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.youtube.com/">Youtube</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+          </nav>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <li>Terms & Conditions</li>
+          <li>Cookie Policy</li>
+          <li>Privacy Policy</li>
+        </div>
+      </section>
+      <p>@Copyright 2026 All rights reserved..</p>
+    </footer>
+  </body>
+</html>
